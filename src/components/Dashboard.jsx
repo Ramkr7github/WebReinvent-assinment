@@ -37,7 +37,8 @@ function Dashboard() {
       <Header />
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 pt-20">
 
-      <h1 className="text-4xl font-bold mb-4">Welcome, To the DashBoard!</h1>
+      <h1 className="text-4xl font-bold mb-4">  Welcome </h1>
+      <h1 className="text-4xl font-bold mb-4">  To the DashBoard!</h1>
         
         <div className="flex flex-wrap gap-6 justify-center p-10">
           {users.map((user) => {
