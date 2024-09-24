@@ -25,6 +25,10 @@ function Signup() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <form onSubmit={handleSignup} className="bg-white p-6 rounded shadow-md w-full max-w-sm">
+      <div className="flex justify-center text-2xl font-bold text-gray-800 p-4">
+          <a href="/"><img src="https://webreinvent.com/images/logo-webreinvent.svg" alt="MyLogo" className="h-10 bg-indigo-600" /></a>
+        </div>
+        
         <h2 className="text-2xl font-bold mb-5 text-center">Sign Up</h2>
         {error && <p className="text-red-500 text-center mb-3">{error}</p>}
         <div className="mb-4">
