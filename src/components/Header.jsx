@@ -32,7 +32,7 @@ const Header = () => {
           <a href="/contact" className="text-white hover:text-gray-900">Contact</a>
         </nav>
 
-        {/* Button or Profile */}
+        {/* Logout Button */}
         <button
         onClick={handleLogout}
         className="bg-red-600 text-white py-2 px-6 rounded hover:bg-red-700 transition duration-200"

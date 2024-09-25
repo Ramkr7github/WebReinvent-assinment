@@ -24,7 +24,7 @@ function Login() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-indigo-300">
       <form onSubmit={handleLogin} className="bg-white p-6 rounded shadow-md w-full max-w-sm">
       <div className="flex justify-center text-2xl font-bold text-gray-800 p-4">
           <a href="/"><img src="https://webreinvent.com/images/logo-webreinvent.svg" alt="MyLogo" className="h-10 bg-indigo-600" /></a>

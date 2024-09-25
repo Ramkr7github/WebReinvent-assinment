@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import UserCard from "./Usercard";
 import Header from "./Header";
+import Footer from "./Footer";
+import ImageTextSection from "./ImageTextSection";
 
 function Dashboard() {
   const [users, setUsers] = useState([]);
@@ -35,18 +37,16 @@ function Dashboard() {
   return (
     <>
       <Header />
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 pt-20">
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 pt-16">
+        <ImageTextSection />
 
-      <h1 className="text-4xl font-bold mb-4">  Welcome </h1>
-      <h1 className="text-4xl font-bold mb-4"> To the DashBoard!</h1>
-        
-        <div className="flex flex-wrap gap-6 justify-center p-10">
+        <div className="flex flex-wrap gap-6 justify-center p-10 bg-indigo-100">
           {users.map((user) => {
             return <UserCard key={user.id} user={user} />;
           })}
         </div>
-        
       </div>
+      <Footer />
     </>
   );
 }
